@@ -78,7 +78,7 @@ export const AuthForm = ({
       } else {
         await logInUser(email, password);
 
-        toast.success(`Welcome back!`);
+        toast.success(`Welcome back, ${email}!`);
       }
     } catch (error) {
       toast.error(error.message);
